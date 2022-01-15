@@ -34,9 +34,8 @@ Then create an animation player node
 Select animation player, click animation button and create a new animation
 Set the animation length to frames * 0.1
 Create animations for each direction for both idle and walk by setting a property track and have that linked to the sprite frame
-Should be able to use key button on player sprite, but, it was missing when I tried
-Workaround is to manually add a property track that points to the sprite frame field
-? Get a reference to the animation player in the player script
+Should be able to use key button on player sprite to set key frames
+Get a reference to the animation player in the player script
 Add animation tree to the player object
 Assign animation player to the animation tree by clicking assign in the inspector
 Set the tree root to a new AnimationNodeStateMachine
