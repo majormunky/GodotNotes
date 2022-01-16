@@ -81,3 +81,8 @@ func _physics_process(delta):
 
 
 ```
+
+# Camera
+One way to have a camera follow the player is to have a Camera2D as a child of the player.  A problem can happen with this setup if the player ends up being removed from the game, maybe when they die, then the camera gets removed and it gets reset to the default camera.
+
+To fix this, you can add a RemoteTransform2D node to the player, and a Camera2D to the game.  You can point the RemoteTransform2D to point to the camera, which will make the camera follow the player, and it doesn't get destroyed if the player is removed from the scene, as the camera is a child of the game.
